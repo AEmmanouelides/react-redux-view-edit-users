@@ -1,0 +1,11 @@
+.mainCard {
+  width: 20rem;
+  margin-right: 15px;
+  margin-bottom: 15px;
+
+  display: inline-block;
+}
+
+.btn-primary:disabled {
+  cursor: not-allowed;
+}

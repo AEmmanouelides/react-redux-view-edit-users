@@ -1,0 +1,27 @@
+.userEntity.card {
+    border-radius: 10px;
+    margin: 10px 25px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    cursor: pointer;
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .details {
+        border-radius: 0px 0px 7px 8px;
+        padding: 5px;
+        color: white;
+        background-color: #0001FA;
+    }
+
+    .title {
+        border-radius: 8px 8px 0px 0px;
+        background-color: #B6DAE8;
+        color: #475b66;
+        margin-bottom: -1rem;
+        padding-bottom: 9px;
+    }
+}
