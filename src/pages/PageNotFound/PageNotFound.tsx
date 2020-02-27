@@ -8,8 +8,8 @@ const PageNotFound: React.FC = () => (
     <div className='pageNotFound'>
     <img className='image' alt='pageNotFound' src='https://www.coengoedegebure.com/assets/images/404.png' />
       <div>
-        <Link to="/">
-          <Button variant="primary">Back to Home Page</Button>
+        <Link to='/'>
+          <Button variant='primary'>Back to Home Page</Button>
         </Link>
       </div>
     </div>

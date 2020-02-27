@@ -37,6 +37,7 @@ Once the modal is closed, the new details should be reflected in the cards.
 - The application is responsive.
 - Reactstrap was used for Bootstrap components. 
 - On Edit Modal, form validations were set.
+- The JSON file with the mock data is in the public folder 
 
 ## Running the App
 

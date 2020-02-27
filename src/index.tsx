@@ -1,30 +1,28 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { useState } from 'react';
-// import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
 import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem } from 'reactstrap';
 import App from './App';
 import './index.scss';
-import Users from "./pages/User/Users";
+import PageNotFound from './pages/PageNotFound/PageNotFound';
+import Users from './pages/User/Users';
 import * as serviceWorker from './serviceWorker';
 import rootReducer from './store/reducers';
-import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
-  const store = configureStore({
+const store = configureStore({
       reducer: rootReducer
-    })
+  })
 
-  const Root: React.FC = () => {
+const Root: React.FC = () => {
 
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
   
-    return (
-      
+    return ( 
         <Provider store={store}>
           <Router>
               <div>
@@ -32,7 +30,7 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
               <NavbarBrand onClick={toggleNavbar} >Welcome to React/Redux exercise!</NavbarBrand >
                  <NavbarToggler onClick={toggleNavbar} />
                  <Collapse isOpen={!collapsed} navbar>
-                  <Nav className="mr-auto" navbar>
+                  <Nav navbar>
                     <NavItem>
                       <NavLink 
                       exact
