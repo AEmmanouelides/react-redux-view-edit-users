@@ -25,9 +25,8 @@ const Root: React.FC = () => {
     return ( 
         <Provider store={store}>
           <Router>
-              <div>
-              <Navbar color='faded' light className='container'>
-              <NavbarBrand onClick={toggleNavbar} >Welcome to React/Redux exercise!</NavbarBrand >
+              <Navbar onClick={toggleNavbar} color='faded' light className='container'>
+              <NavbarBrand>Welcome to React/Redux exercise!</NavbarBrand >
                  <NavbarToggler onClick={toggleNavbar} />
                  <Collapse isOpen={!collapsed} navbar>
                   <Nav navbar>
@@ -54,7 +53,6 @@ const Root: React.FC = () => {
                 <Route exact path='/users' component={Users} />
                 <Route component={PageNotFound} />
               </Switch>
-              </div>
           </Router>
         </Provider>
       )
